@@ -10,15 +10,12 @@ const { width, height } = Dimensions.get('window');
 
 const CharacterList = () => {
 	const [episodes, setEpisodes] = useState([
-		{ id: '1', title: 'Öğe 1' },
-		{ id: '2', title: 'Öğe 2' },
-		{ id: '3', title: 'Öğe 3' },
-		{ id: '4', title: 'Öğe 4' },
+
 	]);
 
 	const loadMoreEpisodes = () => {
 		const additionalEpisodes = [
-			{ id: '5', title: 'Öğe 5' },
+		
 
 		];
 

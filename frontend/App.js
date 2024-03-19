@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import HomeScreen from './src/screens/HomeScreen/HomeScreen';
 import EpisodeDetails from './src/screens/episodeDetail/EpisodeDetails';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 export default function App() {
 	return (
