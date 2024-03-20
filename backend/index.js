@@ -25,8 +25,10 @@ app.get('/api/episodes', async (req, res) => {
 
 app.get('/api/episodes/:id', async (req, res) => {
 	const { id } = req.params;
+	console.log(id)
 	try {
 		const response = await axios.get(`https://rickandmortyapi.com/api/episode/${id}`);
+		console.log(response.data)
 		res.json(response.data);
 	} catch (error) {
 		console.error(`Error fetching episode with id ${id}:`, error);
